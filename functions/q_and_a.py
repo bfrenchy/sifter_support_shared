@@ -1,5 +1,8 @@
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA, ConversationalRetrievalChain
+import sys
+
+sys.path.insert(0, '../')
 from config.llm_config import llm_model, search_type, chain_type
 from config.llm_config import temperature, k
 
