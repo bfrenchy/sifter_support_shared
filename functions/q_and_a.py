@@ -102,4 +102,5 @@ def ask_with_memory(vector_store, q, filter_args=None,
     result = crc({'question': q, 'chat_history': chat_history})
     chat_history.append((q, result['answer']))
 
-    return result, chat_history
+    # return result, chat_history
+    return result['answer']
